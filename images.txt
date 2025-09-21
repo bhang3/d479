@@ -1,2 +1,8 @@
 home - https://unsplash.com/photos/a-body-of-water-that-is-very-clear-Nw0p7oLKwnA
 about - https://unsplash.com/photos/brown-wooden-house-surrounded-by-palm-trees-E_FnocWHIlg
+attractions/beach-day - https://unsplash.com/photos/palm-trees-on-beach-shore-during-daytime-BcqbKBVZ-Zk
+attractions/zipline - https://unsplash.com/photos/man-ziplining-through-a-lush-green-forest-uX-ZXh236sk
+attractions/volcano - https://unsplash.com/photos/brown-mountain-near-body-of-water-during-daytime-U6pLKRSQLis
+attractions/museum - https://unsplash.com/photos/people-inside-white-building-during-daytime-TBNbpd6Xs_4
+attractions/food - https://unsplash.com/photos/person-holding-stainless-steel-spoon-ZW9CSUdANqw
+attractions/nightlife - https://unsplash.com/photos/photography-of-a-hotels-swimming-pool-at-night-tv6JszPLRfg
