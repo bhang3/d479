@@ -1,13 +1,13 @@
-import { AboutSection } from "@/components/about-section";
+import { LodgingSection } from "@/components/lodging-section";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 
-export default function AboutPage() {
+export default function LodgingPage() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <AboutSection />
+        <LodgingSection />
       </main>
       <Footer />
     </div>
