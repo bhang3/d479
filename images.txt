@@ -12,3 +12,9 @@ dining/legendary-spice - https://unsplash.com/photos/spaghetti-on-black-ceramic-
 dining/sunrise-cafe - https://unsplash.com/photos/a-wooden-table-topped-with-plates-of-breakfast-foods-jTYi9AFXp3Q
 dining/volcano-grill - https://unsplash.com/photos/grilled-meat-on-white-ceramic-plate-pe9dvM1rQkM
 dining/taniti-island-kitchen - https://unsplash.com/photos/burger-and-fries-on-white-ceramic-plate-LPidgYqixDQ
+lodging/taniti-grand-resort - https://unsplash.com/photos/brown-and-white-house-near-swimming-pool-during-daytime-jcBwieuJhHA
+lodging/blue-waters-hotel - https://unsplash.com/photos/brown-and-white-wooden-store-uQHWhJS8icA
+lodging/rainforest-bed-breakfast - https://unsplash.com/photos/a-bed-sitting-under-a-window-next-to-a-lush-green-forest-7kMotWfqjVQ
+lodging/taniti-hostel - https://unsplash.com/photos/red-and-white-lighted-store-signage-8TrcnRMap90
+lodging/yellow-bay-deluxe-resort - https://unsplash.com/photos/blue-body-of-water-in-front-of-building-near-trees-during-nighttime-M7GddPqJowg
+lodging/rocky-lodge - https://unsplash.com/photos/a-red-house-sitting-on-top-of-a-body-of-water-vGRgVMY7ZWc

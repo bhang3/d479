@@ -7,8 +7,6 @@ export function Header() {
     { name: "Attractions", href: "/attractions" },
     { name: "Dining", href: "/dining" },
     { name: "Lodging", href: "/lodging" },
-    { name: "Plan Your Visit", href: "/plan-visit" },
-    { name: "Practical Info", href: "/practical-info" },
   ];
 
   return (

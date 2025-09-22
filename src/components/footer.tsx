@@ -41,16 +41,16 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/practical-info"
+                  href="/dining"
                   className="hover:text-primary transition-colors">
-                  Practical Info
+                  Dining
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/plan-visit"
+                  href="/lodging"
                   className="hover:text-primary transition-colors">
-                  Plan Your Visit
+                  Lodging
                 </Link>
               </li>
             </ul>
