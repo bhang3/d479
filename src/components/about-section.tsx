@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Users, Mountain } from "lucide-react";
+import AboutImage from "@/assets/about/about.jpg";
 import Image from "next/image";
 
 export function AboutSection() {
@@ -68,11 +69,11 @@ export function AboutSection() {
           </div>
           <div className="aspect-video relative ">
             <Image
-              src="/about/about.jpg"
+              src={AboutImage}
               alt="Traditional Tanitian village"
               className="rounded-lg shadow-lg w-full"
-              fill
-              unoptimized
+              placeholder="blur"
+              priority
             />
           </div>
         </div>

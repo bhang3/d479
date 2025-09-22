@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MapPin, Calendar, Utensils, Bed } from "lucide-react";
 import Link from "next/link";
+import HomeImg from "@/assets/home/home.jpg";
 
 export function HomeSection() {
   return (
@@ -8,7 +9,7 @@ export function HomeSection() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('/home/home.jpg')`,
+          backgroundImage: `url(${HomeImg.src})`,
         }}>
         <div className="absolute inset-0 home-overlay" />
       </div>

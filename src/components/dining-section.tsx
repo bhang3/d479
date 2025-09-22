@@ -21,6 +21,13 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 
+import BrewingCo from "@/assets/dining/brewing-co.jpg";
+import DailyCatch from "@/assets/dining/daily-catch.jpg";
+import LegendarySpice from "@/assets/dining/legendary-spice.jpg";
+import SunriseCafe from "@/assets/dining/sunrise-cafe.jpg";
+import TanitiIslandKitchen from "@/assets/dining/taniti-island-kitchen.jpg";
+import VolcanoGrill from "@/assets/dining/volcano-grill.jpg";
+
 export function DiningSection() {
   const [activeCategory, setActiveCategory] = useState("all");
 
@@ -31,7 +38,7 @@ export function DiningSection() {
       type: "Local Cuisine",
       description:
         "Traditional Tanitian fish and rice dishes prepared with authentic island spices and fresh daily catches.",
-      image: "/dining/daily-catch.jpg",
+      image: DailyCatch,
       category: "local",
       priceRange: "$$",
       hours: "11 AM - 10 PM",
@@ -47,7 +54,7 @@ export function DiningSection() {
       type: "Microbrewery & Pub",
       description:
         "Local microbrewery featuring craft beers and hearty pub fare in a relaxed island atmosphere.",
-      image: "/dining/brewing-co.jpg",
+      image: BrewingCo,
       category: "drinks",
       priceRange: "$",
       hours: "4 PM - 12 AM",
@@ -59,7 +66,7 @@ export function DiningSection() {
       type: "Pan-Asian Fusion",
       description:
         "Contemporary Pan-Asian cuisine blending traditional flavors with modern island ingredients.",
-      image: "/dining/legendary-spice.jpg",
+      image: LegendarySpice,
       category: "international",
       priceRange: "$$$",
       hours: "5 PM - 11 PM",
@@ -71,7 +78,7 @@ export function DiningSection() {
       type: "American Breakfast",
       description:
         "Classic American breakfast and brunch favorites with a tropical twist and fresh local coffee.",
-      image: "/dining/sunrise-cafe.jpg",
+      image: SunriseCafe,
       category: "american",
       priceRange: "$",
       hours: "6 AM - 2 PM",
@@ -83,7 +90,7 @@ export function DiningSection() {
       type: "Fine Dining",
       description:
         "Upscale dining with premium steaks and international cuisine, featuring panoramic volcano views.",
-      image: "/dining/volcano-grill.jpg",
+      image: VolcanoGrill,
       category: "american",
       priceRange: "$$$$",
       hours: "6 PM - 10 PM",
@@ -95,7 +102,7 @@ export function DiningSection() {
       type: "Local Cuisine",
       description:
         "Authentic Tanitian home-style meals featuring freshly caught fish, root vegetables, and tropical fruits, served in a warm, family-style setting.",
-      image: "/dining/taniti-island-kitchen.jpg",
+      image: TanitiIslandKitchen,
       category: "local",
       priceRange: "$",
       hours: "10 AM - 9 PM",
@@ -192,8 +199,8 @@ export function DiningSection() {
                 <Image
                   src={restaurant.image}
                   alt={restaurant.name}
-                  fill
-                  unoptimized
+                  placeholder="blur"
+                  priority
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <Badge className="absolute top-4 left-4 bg-primary">

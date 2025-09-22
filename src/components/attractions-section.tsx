@@ -20,6 +20,13 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 
+import BeachDay from "@/assets/attractions/beach-day.jpg";
+import Zipline from "@/assets/attractions/zipline.jpg";
+import Volcano from "@/assets/attractions/volcano.jpg";
+import Museum from "@/assets/attractions/museum.jpg";
+import Food from "@/assets/attractions/food.jpg";
+import NightLife from "@/assets/attractions/nightlife.jpg";
+
 export function AttractionsSection() {
   const [activeCategory, setActiveCategory] = useState("all");
 
@@ -29,7 +36,7 @@ export function AttractionsSection() {
       title: "Beach Day",
       description:
         "Sandy and rocky beaches that encircle Yellow Leaf Bay with crystal-clear waters perfect for swimming and snorkeling.",
-      image: "/attractions/beach-day.jpg",
+      image: BeachDay,
       categories: ["nature"],
       icon: <Waves className="h-5 w-5" />,
     },
@@ -38,7 +45,7 @@ export function AttractionsSection() {
       title: "Rainforest Adventures",
       description:
         "Explore lush tropical rainforests with zip-lining, hiking trails, and guided nature tours showcasing exotic wildlife.",
-      image: "/attractions/zipline.jpg",
+      image: Zipline,
       categories: ["nature", "adventure"],
       icon: <TreePine className="h-5 w-5" />,
     },
@@ -47,7 +54,7 @@ export function AttractionsSection() {
       title: "Active Volcano Tours",
       description:
         "Visit Taniti's small but active volcano with guided tours offering spectacular views and geological insights.",
-      image: "/attractions/volcano.jpg",
+      image: Volcano,
       categories: ["nature", "adventure"],
       icon: <Mountain className="h-5 w-5" />,
     },
@@ -56,7 +63,7 @@ export function AttractionsSection() {
       title: "Local History Museum",
       description:
         "Discover Taniti's rich cultural heritage and indigenous history through interactive exhibits and artifacts.",
-      image: "/attractions/museum.jpg",
+      image: Museum,
       categories: ["culture"],
       icon: <Camera className="h-5 w-5" />,
     },
@@ -65,7 +72,7 @@ export function AttractionsSection() {
       title: "Culinary Experiences",
       description:
         "Savor local fish and rice dishes, Pan-Asian cuisine, and fresh tropical fruits at our diverse restaurants.",
-      image: "/attractions/food.jpg",
+      image: Food,
       categories: ["culture", "entertainment"],
       icon: <Utensils className="h-5 w-5" />,
     },
@@ -74,7 +81,7 @@ export function AttractionsSection() {
       title: "Nightlife & Entertainment",
       description:
         "Experience local pubs, microbrewery, dance clubs, and live music venues in the vibrant Merriton Landing area.",
-      image: "/attractions/nightlife.jpg",
+      image: NightLife,
       categories: ["entertainment"],
       icon: <Music className="h-5 w-5" />,
     },
@@ -126,8 +133,8 @@ export function AttractionsSection() {
                   src={attraction.image}
                   alt={attraction.title}
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  fill
-                  unoptimized
+                  placeholder="blur"
+                  priority
                 />
                 <Badge className="absolute top-4 left-4 bg-primary">
                   {attraction.icon}

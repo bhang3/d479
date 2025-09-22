@@ -23,6 +23,13 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 
+import BlueWatersHotel from "@/assets/lodging/blue-waters-hotel.jpg";
+import RainforestBedBreakfast from "@/assets/lodging/rainforest-bed-breakfast.jpg";
+import RockyLodge from "@/assets/lodging/rocky-lodge.jpg";
+import TanitiGrandResort from "@/assets/lodging/taniti-grand-resort.jpg";
+import TanitiHostel from "@/assets/lodging/taniti-hostel.jpg";
+import YellowBayDeluxeResort from "@/assets/lodging/yellow-bay-deluxe-resort.jpg";
+
 export function LodgingSection() {
   const [activeCategory, setActiveCategory] = useState("all");
 
@@ -33,7 +40,7 @@ export function LodgingSection() {
       category: "resort",
       rating: 4,
       price: "$$$",
-      image: "/lodging/taniti-grand-resort.jpg",
+      image: TanitiGrandResort,
       description:
         "Our premier four-star resort offering luxury accommodations with stunning ocean views and world-class amenities.",
       amenities: ["Ocean View", "Pool", "Spa", "Restaurant", "WiFi", "Parking"],
@@ -44,7 +51,7 @@ export function LodgingSection() {
       category: "hotel",
       rating: 3,
       price: "$$",
-      image: "/lodging/blue-waters-hotel.jpg",
+      image: BlueWatersHotel,
       description:
         "A charming family-owned hotel with personalized service and authentic Tanitian hospitality.",
       amenities: ["Garden View", "Restaurant", "WiFi", "Family Rooms"],
@@ -55,7 +62,7 @@ export function LodgingSection() {
       category: "bnb",
       rating: 4,
       price: "$$",
-      image: "/lodging/rainforest-bed-breakfast.jpg",
+      image: RainforestBedBreakfast,
       description:
         "Wake up to the sounds of nature in our eco-friendly B&B nestled in the tropical rainforest.",
       amenities: ["Nature View", "Breakfast", "WiFi", "Hiking Access"],
@@ -66,7 +73,7 @@ export function LodgingSection() {
       category: "hostel",
       rating: 3,
       price: "$",
-      image: "/lodging/taniti-hostel.jpg",
+      image: TanitiHostel,
       description:
         "Clean, safe, and affordable accommodation perfect for budget travelers and backpackers.",
       amenities: ["Shared Kitchen", "Common Area", "WiFi", "Lockers"],
@@ -77,7 +84,7 @@ export function LodgingSection() {
       category: "resort",
       rating: 4,
       price: "$$$$",
-      image: "/lodging/yellow-bay-deluxe-resort.jpg",
+      image: YellowBayDeluxeResort,
       description:
         "An exclusive five-star resort featuring private villas, fine dining, and unmatched luxury along Yellow Bay’s pristine shoreline.",
       amenities: [
@@ -96,7 +103,7 @@ export function LodgingSection() {
       category: "hotel",
       rating: 3,
       price: "$$",
-      image: "/lodging/rocky-lodge.jpg",
+      image: RockyLodge,
       description:
         "Family-owned lodge offering spectacular mountain and volcano views with hiking trail access.",
       amenities: ["Mountain View", "Restaurant", "WiFi", "Hiking Trails"],
@@ -217,8 +224,8 @@ export function LodgingSection() {
                 <Image
                   src={accommodation.image}
                   alt={accommodation.name}
-                  fill
-                  unoptimized
+                  placeholder="blur"
+                  priority
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute top-4 left-4">
