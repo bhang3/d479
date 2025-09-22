@@ -95,6 +95,7 @@ export function BookingSection() {
                     type="tel"
                     value={formData.phone}
                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="e.g. 123-456-7890"
                     onChange={(e) => handleInputChange("phone", e.target.value)}
                     required
                   />
