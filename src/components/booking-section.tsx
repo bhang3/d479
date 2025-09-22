@@ -16,8 +16,10 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Calendar, Send } from "lucide-react";
+import dayjs from "dayjs";
 
 export function BookingSection() {
+  const today = dayjs();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -92,7 +94,9 @@ export function BookingSection() {
                     id="phone"
                     type="tel"
                     value={formData.phone}
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                     onChange={(e) => handleInputChange("phone", e.target.value)}
+                    required
                   />
                 </div>
 
@@ -106,6 +110,7 @@ export function BookingSection() {
                       onChange={(e) =>
                         handleInputChange("checkIn", e.target.value)
                       }
+                      min={today.toString()}
                       required
                     />
                   </div>
@@ -118,6 +123,7 @@ export function BookingSection() {
                       onChange={(e) =>
                         handleInputChange("checkOut", e.target.value)
                       }
+                      min={today.toString()}
                       required
                     />
                   </div>
@@ -129,7 +135,8 @@ export function BookingSection() {
                     <Select
                       onValueChange={(value) =>
                         handleInputChange("guests", value)
-                      }>
+                      }
+                      required>
                       <SelectTrigger>
                         <SelectValue placeholder="Select guests" />
                       </SelectTrigger>
@@ -147,7 +154,8 @@ export function BookingSection() {
                     <Select
                       onValueChange={(value) =>
                         handleInputChange("accommodation", value)
-                      }>
+                      }
+                      required>
                       <SelectTrigger>
                         <SelectValue placeholder="Select accommodation" />
                       </SelectTrigger>
@@ -164,7 +172,8 @@ export function BookingSection() {
                     <Select
                       onValueChange={(value) =>
                         handleInputChange("activities", value)
-                      }>
+                      }
+                      required>
                       <SelectTrigger>
                         <SelectValue placeholder="Select primary interest" />
                       </SelectTrigger>
