@@ -21,6 +21,7 @@ import {
   Heart,
   Shield,
 } from "lucide-react";
+import Image from "next/image";
 
 export function LodgingSection() {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -213,7 +214,7 @@ export function LodgingSection() {
               key={accommodation.id}
               className="overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video relative overflow-hidden">
-                <img
+                <Image
                   src={accommodation.image || "/placeholder.svg"}
                   alt={accommodation.name}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"

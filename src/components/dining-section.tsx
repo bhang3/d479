@@ -19,6 +19,7 @@ import {
   Clock,
   ChefHat,
 } from "lucide-react";
+import Image from "next/image";
 
 export function DiningSection() {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -188,7 +189,7 @@ export function DiningSection() {
               key={restaurant.id}
               className="overflow-hidden hover:shadow-lg transition-shadow group">
               <div className="relative overflow-hidden">
-                <img
+                <Image
                   src={restaurant.image || "/placeholder.svg"}
                   alt={restaurant.name}
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"

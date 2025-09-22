@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Users, Mountain } from "lucide-react";
+import Image from "next/image";
 
 export function AboutSection() {
   const stats = [
@@ -66,7 +67,7 @@ export function AboutSection() {
             </p>
           </div>
           <div className="relative">
-            <img
+            <Image
               src="/about/about.jpg"
               alt="Traditional Tanitian village"
               className="rounded-lg shadow-lg w-full"
