@@ -67,7 +67,7 @@ export function AboutSection() {
           </div>
           <div className="relative">
             <img
-              src="/about.jpg"
+              src="/about/about.jpg"
               alt="Traditional Tanitian village"
               className="rounded-lg shadow-lg w-full"
             />
