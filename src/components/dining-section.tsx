@@ -188,10 +188,12 @@ export function DiningSection() {
             <Card
               key={restaurant.id}
               className="overflow-hidden hover:shadow-lg transition-shadow group">
-              <div className="relative overflow-hidden">
+              <div className="aspect-video relative  overflow-hidden">
                 <Image
-                  src={restaurant.image || "/placeholder.svg"}
+                  src={restaurant.image}
                   alt={restaurant.name}
+                  fill
+                  unoptimized
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <Badge className="absolute top-4 left-4 bg-primary">

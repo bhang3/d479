@@ -66,11 +66,13 @@ export function AboutSection() {
               dominated by fishing or agriculture.
             </p>
           </div>
-          <div className="relative">
+          <div className="aspect-video relative ">
             <Image
               src="/about/about.jpg"
               alt="Traditional Tanitian village"
               className="rounded-lg shadow-lg w-full"
+              fill
+              unoptimized
             />
           </div>
         </div>

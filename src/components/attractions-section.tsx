@@ -121,11 +121,13 @@ export function AttractionsSection() {
             <Card
               key={attraction.id}
               className="overflow-hidden hover:shadow-lg transition-shadow group">
-              <div className="relative overflow-hidden">
+              <div className="aspect-video relative overflow-hidden">
                 <Image
-                  src={attraction.image || "/placeholder.svg"}
+                  src={attraction.image}
                   alt={attraction.title}
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  fill
+                  unoptimized
                 />
                 <Badge className="absolute top-4 left-4 bg-primary">
                   {attraction.icon}

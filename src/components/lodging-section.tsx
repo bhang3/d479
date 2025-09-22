@@ -215,8 +215,10 @@ export function LodgingSection() {
               className="overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video relative overflow-hidden">
                 <Image
-                  src={accommodation.image || "/placeholder.svg"}
+                  src={accommodation.image}
                   alt={accommodation.name}
+                  fill
+                  unoptimized
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute top-4 left-4">
