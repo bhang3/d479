@@ -19,7 +19,7 @@ import { Calendar, Send } from "lucide-react";
 import dayjs from "dayjs";
 
 export function BookingSection() {
-  const today = dayjs();
+  const today = dayjs().format("YYYY-MM-DD");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -110,7 +110,7 @@ export function BookingSection() {
                       onChange={(e) =>
                         handleInputChange("checkIn", e.target.value)
                       }
-                      min={today.toString()}
+                      min={today}
                       required
                     />
                   </div>
