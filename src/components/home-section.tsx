@@ -19,7 +19,7 @@ export function HomeSection() {
           Discover Taniti
         </h1>
 
-        <div className="grid grid-cols-4 gap-4 mb-16 max-w-4xl mx-auto">
+        <div className="grid grid-cols-3 gap-4 mb-16 max-w-4xl mx-auto">
           <Link href="/attractions">
             <Button
               size="lg"
@@ -44,15 +44,6 @@ export function HomeSection() {
               className="w-full h-20 bg-secondary/90 hover:bg-secondary text-secondary-foreground backdrop-blur-sm border border-white/20 flex flex-col items-center justify-center gap-2">
               <Bed className="h-5 w-5" />
               <span className="text-sm font-medium">Find Lodging</span>
-            </Button>
-          </Link>
-
-          <Link href="/plan-visit">
-            <Button
-              size="lg"
-              className="w-full h-20 bg-primary/90 hover:bg-primary text-primary-foreground backdrop-blur-sm border border-white/20 flex flex-col items-center justify-center gap-2">
-              <Calendar className="h-5 w-5" />
-              <span className="text-sm font-medium">Plan Your Visit</span>
             </Button>
           </Link>
         </div>
