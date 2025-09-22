@@ -1,7 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -132,10 +138,12 @@ export function AttractionsSection() {
                 <p className="text-muted-foreground mb-4 leading-relaxed">
                   {attraction.description}
                 </p>
+              </CardContent>
+              <CardFooter>
                 <Button className="w-full bg-transparent" variant="outline">
                   Learn More
                 </Button>
-              </CardContent>
+              </CardFooter>
             </Card>
           ))}
         </div>

@@ -6,3 +6,9 @@ attractions/volcano - https://unsplash.com/photos/brown-mountain-near-body-of-wa
 attractions/museum - https://unsplash.com/photos/people-inside-white-building-during-daytime-TBNbpd6Xs_4
 attractions/food - https://unsplash.com/photos/person-holding-stainless-steel-spoon-ZW9CSUdANqw
 attractions/nightlife - https://unsplash.com/photos/photography-of-a-hotels-swimming-pool-at-night-tv6JszPLRfg
+dining/daily-catch - https://unsplash.com/photos/two-plates-of-food-on-a-white-table-nmJRb8MPCLQ
+dining/brewing-co - https://unsplash.com/photos/a-building-with-a-bunch-of-signs-on-the-side-of-it-zop8KT1Ec3Q
+dining/legendary-spice - https://unsplash.com/photos/spaghetti-on-black-ceramic-bowl-764qzzLAqs0
+dining/sunrise-cafe - https://unsplash.com/photos/a-wooden-table-topped-with-plates-of-breakfast-foods-jTYi9AFXp3Q
+dining/volcano-grill - https://unsplash.com/photos/grilled-meat-on-white-ceramic-plate-pe9dvM1rQkM
+dining/taniti-island-kitchen - https://unsplash.com/photos/burger-and-fries-on-white-ceramic-plate-LPidgYqixDQ
