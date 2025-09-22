@@ -136,12 +136,16 @@ export function AttractionsSection() {
                   placeholder="blur"
                   priority
                 />
-                <Badge className="absolute top-4 left-4 bg-primary">
-                  {attraction.icon}
-                  <span className="ml-1 capitalize">
-                    {attraction.categories}
-                  </span>
-                </Badge>
+                <div className="absolute top-4 left-4 flex flex-wrap gap-1">
+                  {attraction.categories.map((category) => (
+                    <Badge
+                      key={category}
+                      className="bg-primary flex items-center gap-1">
+                      {attraction.icon}
+                      <span className="capitalize">{category}</span>
+                    </Badge>
+                  ))}
+                </div>
               </div>
               <CardHeader>
                 <CardTitle className="text-xl">{attraction.title}</CardTitle>
